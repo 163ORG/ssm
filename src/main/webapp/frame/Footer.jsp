@@ -1,5 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="java.util.*" import="cap.bean.*" import="cap.dao.impl.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -15,9 +14,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <div class="col-lg-12">
             <p >
             Copyright &copy; 2013 &middot; UI based on Bootstrap 3 
-                                  &middot; <a href="<%=basePath %>adminlogin" target="_blank">admin</a>
+                                  &middot; <a href="<%=basePath %>AdminLogin.jsp" target="_blank">admin</a>
                                   &middot; starlee2008@163.com 
-                                  &middot;访问人数：${count}
+                                  &middot;访问人数：<%=(Integer)session.getAttribute("num") %>                           
                             
             </p>
           </div>

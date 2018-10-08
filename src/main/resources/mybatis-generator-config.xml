@@ -6,7 +6,7 @@
 
     <!-- !!!! Driver Class Path(指定MySQL驱动的路径) -->
     <classPathEntry
-            location="D:\MAVEN\mysql\mysql-connector-java\5.1.39\mysql-connector-java-5.1.39.jar"/>
+            location="E:\mysql-connector-java-5.1.29-bin.jar"/>
 
     <context id="context" targetRuntime="MyBatis3">
         <commentGenerator>
